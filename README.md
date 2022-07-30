@@ -1,4 +1,4 @@
-# domain-regex.py
+# domain_regex.py
 Performs semi-optimized regular expression matching given date range constraints, grouping by given domains. The expressions do not need to contain any actual regular expressions, instead defaulting to simple word and phrase matching. 
 
 Requires numpy and pandas.
