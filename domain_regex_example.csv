@@ -1,0 +1,7 @@
+Domain,Expression,Allow Partial Match,Begin Date,End Date,Comments
+COVID,corona,,2020-01-01,,Only matches text in messages on or after 2020-01-01
+COVID,coronavirus,,2020-01-01,,Only matches text in messages on or after 2020-01-01
+COVID,COVID,,2020-01-01,,Only matches text in messages on or after 2020-01-01
+COVID,COVID\-?19,,2020-01-01,,Only matches text in messages on or after 2020-01-01. Also matches with or without hyphen
+COVID,quarantines?,,2020-01-01,,Only matches text in messages on or after 2020-01-01. Also matches singular and plural
+Example,word1\s+(?:[\w'-]+\s+){0,6}?word2,,,,Allows 0-6 words or spaces in-between with at least one space (word1 NEAR word2)
