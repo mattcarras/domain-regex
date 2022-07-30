@@ -42,9 +42,11 @@ python -i domain_regex.py
 
 ## Input file Notes
 Supported input domain regular expression CSV columns: `Domain,Expression,Allow Partial Match,Begin Date,End Date`
+
 Any other columns, such as the "Comments" column in the example file, will be ignored.
 
 Supported input dataframe columns: `Date,Message,UserId,Username`
+
 These columns are mapped by the `cols={...}` parameter. Any other columns are ignored. The only required mapping is `Message`. 
 
 ## Useful advanced regular expressions
