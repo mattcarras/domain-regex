@@ -9,7 +9,7 @@ Last tested on Python 3.8.2 64-bit with pandas 1.1.0 and numpy 1.19.1.
 This was part of a project to parse data from Discord. As such it's designed to work with columns representing Date/Timestamp, Message, UserId, and Username, though theoretically only the Message column is required.
 
 ## Performance
-The function combines all regular expressions before processing, significantly speeding up execution. The matched expressions are then parsed again to figure out which domains they fall in and whether any date ranges need to be filtered out per domain (the more complex this is, the longer it takes). Adding simple regular expressions like "widgets?" to match singular/plural does not seem to necessarily speed up execution. The function makes very use of vectorization wherever possible, though there are surely significant room for further improvements.
+The function combines all regular expressions before processing, significantly speeding up execution. The matched expressions are then parsed again to figure out which domains they fall in and whether any date ranges need to be filtered out per domain (the more complex this is, the longer it takes). Adding simple regular expressions like "widgets?" to match singular/plural does not seem to necessarily speed up execution. The function makes heavy use of vectorization wherever possible.
 
 Below were tested using a Surface Book 2 (6th Gen Core i7). Actual workstations should see significant improvements.
 
