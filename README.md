@@ -47,7 +47,7 @@ Any other columns, such as the "Comments" column in the example file, will be ig
 
 Supported input dataframe columns: `Date,Message,UserId,Username`
 
-These columns are mapped by the `cols={...}` parameter. Any other columns are ignored. The only required mapping is `Message`. 
+These columns can have any user-defined name as they are mapped by the `cols={...}` parameter. Any other columns are ignored. The only required mapping is `Message`. 
 
 ## Useful advanced regular expressions
 ```
